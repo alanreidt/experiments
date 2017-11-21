@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'kitchen-icons';
+	src: url('../font/kitchen-icons.woff2?61037120') format('woff2'),
+		  url('../font/kitchen-icons.woff?61037120') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon {
+	font-family: "kitchen-icons";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+
+	display: inline-block;
+	vertical-align: baseline;
+
+	text-decoration: inherit;
+	text-align: center;
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1;
+
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before { content: '\e800'; }
+.icon-list:before { content: '\e801'; }

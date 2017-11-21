@@ -1,0 +1,174 @@
+/* TODO
+ *   edit the .features__img-imitation;
+ *   edit the grid;
+ *   edit the .feature__link;
+ */
+
+/* =========================================================
+	BASE
+	========================================================= */
+
+/* SETUP */
+
+:root {
+	--main-font-family: "Open Sans", Arial, sans-serif;
+	--base-font-size: 16px;
+	--page-padding: 30px;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+
+	font-family: var(--main-font-family);
+	font-size: var(--base-font-size);
+	color: #333;
+	background-color: #eee;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+
+
+/* =========================================================
+	MODULE
+	========================================================= */
+
+/* GRID */
+
+.row {
+	font-size: 0;
+}
+
+.col {
+	display: inline-block;
+	vertical-align: top;
+
+	font-size: var(--base-font-size);
+}
+
+
+
+
+
+/* =========================================================
+	LAYOUT
+	========================================================= */
+
+/* FEATURES */
+
+.features {}
+
+.features__img-imitation {
+	width: 40%;
+	height: 771px; /* edit */
+
+	background: url('../img/cook.jpeg') #fff no-repeat center / cover;
+}
+
+.features__img {
+	object-fit: cover;
+	vertical-align: middle;
+}
+
+.features__content {
+	width: 60%;
+}
+
+.features__col {
+	width: 40%;
+}
+
+.features__col_big {
+	width: 60%;
+}
+
+.feature-wrapper {
+	width: 100%;
+	background-color: #fff;
+}
+
+.feature-wrapper_main {
+	background-color: #f1cd39;
+}
+
+.feature-wrapper_main .feature__desc {
+	color: inherit;
+}
+
+.feature-wrapper_secondary {
+	background-color: #26262e;
+}
+
+.feature-wrapper_secondary .feature {
+	color: #f1cd39;
+}
+
+.feature-wrapper_secondary .feature__desc {
+	color: #b7b7bb;
+}
+
+.feature {
+	max-width: 442px;
+	padding: 30px;
+	padding-top: 40px;
+
+	color: #333;
+}
+
+.icon-wrapper {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+
+	border: 1px solid;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.feature__icon-wrapper {
+	margin-right: 15px;
+}
+
+.feature__icon {
+	line-height: 35px;
+}
+
+.feature__title {
+	margin-top: 15px;
+	margin-bottom: 20px;
+
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.feature__desc {
+	margin: 0;
+
+	line-height: 1.5;
+	color: #6a6b70;
+}
+
+.feature__link {
+	color: inherit;
+	text-decoration: none;
+
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
