@@ -2,6 +2,7 @@
  * + edit the .features__img-imitation;
  * + edit the grid;
  *   add a bottom line to the .feature__link and reaction on hover;
+ *   document the code;
  */
 
 /* =========================================================
@@ -102,7 +103,7 @@ img {
 }
 
 .feature-wrapper_main .feature__desc {
-	color: inherit;
+	color: #444;
 }
 
 .feature-wrapper_secondary {
@@ -149,8 +150,8 @@ img {
 }
 
 .feature__title {
-	margin-top: 15px;
-	margin-bottom: 20px;
+	margin-top: 18px;
+	margin-bottom: 15px;
 
 	font-size: 18px;
 	font-weight: 600;
