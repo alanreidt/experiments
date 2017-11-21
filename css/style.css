@@ -31,7 +31,7 @@ body {
 
 	font-family: var(--main-font-family);
 	font-size: var(--base-font-size);
-	color: #333;
+	color: #000;
 	background-color: #eee;
 }
 
@@ -70,6 +70,10 @@ img {
 
 /* FEATURES */
 
+:root {
+	--feature-icon-size: 35px;
+}
+
 .features {}
 
 .features__img-imitation {
@@ -78,22 +82,11 @@ img {
 	background: url('../img/cook.jpeg') #fff no-repeat center / cover;
 }
 
-.features__img {
-	object-fit: cover;
-	vertical-align: middle;
-}
-
 .features__content {
 	width: 60%;
 }
 
-.features__col {
-	width: 40%;
-}
-
-.features__col_big {
-	width: 60%;
-}
+/* feature */
 
 .feature-wrapper {
 	width: 40%;
@@ -137,22 +130,22 @@ img {
 	padding: 0 30px;
 }
 
-.icon-wrapper {
+.feature__icon-wrapper {
 	display: inline-block;
-	width: 35px;
-	height: 35px;
+	width: var(--feature-icon-size);
+	height: var(--feature-icon-size);
 
 	border: 1px solid;
 	border-radius: 50%;
 	text-align: center;
 }
 
-.feature__icon-wrapper {
+.feature__icon-wrapper_inline {
 	margin-right: 15px;
 }
 
 .feature__icon {
-	line-height: 35px;
+	line-height: var(--feature-icon-size);
 }
 
 .feature__title {
