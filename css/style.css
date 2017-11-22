@@ -4,6 +4,7 @@
  *   add a bottom line to the .feature__link and reaction on hover;
  *   edit the feature__icon;
  *   rename;
+ *   rename feature__title;
  *   document the code;
  */
 
@@ -54,26 +55,17 @@ img {
 /* CONTAINER */
 
 .container {
-   /*max-width: 1440px;*/
-   /*margin: auto;*/
-   /*padding-right: var(--container-padding);*/
-   /*padding-left: var(--container-padding);*/
+   border-right: var(--container-padding) solid transparent;
+   border-left: var(--container-padding) solid transparent;
 }
 
 /* GRID */
-
-.grid-row {
-   /*margin-right: calc(-1 * var(--container-padding));*/
-   /*margin-left: calc(-1 * var(--container-padding));*/
-}
 
 .row {
    display: flex;
 }
 
 .col {
-   /*display: table-cell;*/
-   /*vertical-align: middle;*/
    width: 50%;
 }
 
@@ -123,7 +115,6 @@ img {
 /* feature */
 
 .feature-wrapper {
-   /*width: 40%;*/
    display: flex;
    align-items: flex-start;
 
@@ -132,7 +123,6 @@ img {
 }
 
 .feature-wrapper:nth-child(2) {
-   /*width: 60%;*/
    border-right: var(--container-padding) solid transparent;
 }
 
@@ -157,7 +147,6 @@ img {
 }
 
 .feature {
-   /*max-width: 445px;*/
    padding: 30px;
    padding-top: 40px;
 
@@ -165,7 +154,6 @@ img {
 }
 
 .feature_empty {
-   /*max-width: 100%;*/
    align-self: center;
 
    padding: 0 30px;
