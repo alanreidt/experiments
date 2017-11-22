@@ -17,6 +17,7 @@
    --main-font-family: "Open Sans", Arial, sans-serif;
    --base-font-size: 16px;
    --page-padding: 30px;
+   --container-padding: calc((100vw - 1440px) / 2);
 }
 
 html {
@@ -50,16 +51,29 @@ img {
    MODULE
    ========================================================= */
 
+/* CONTAINER */
+
+.container {
+   /*max-width: 1440px;*/
+   /*margin: auto;*/
+   /*padding-right: var(--container-padding);*/
+   /*padding-left: var(--container-padding);*/
+}
+
 /* GRID */
 
+.grid-row {
+   /*margin-right: calc(-1 * var(--container-padding));*/
+   /*margin-left: calc(-1 * var(--container-padding));*/
+}
+
 .row {
-   display: table;
-   width: 100%;
+   display: flex;
 }
 
 .col {
-   display: table-cell;
-   vertical-align: middle;
+   /*display: table-cell;*/
+   /*vertical-align: middle;*/
    width: 50%;
 }
 
@@ -80,9 +94,26 @@ img {
 .features {}
 
 .features__img-imitation {
+   display: flex;
+   align-items: center;
    width: 40%;
-
    background: url('../img/cook.jpeg') #fff no-repeat center / cover;
+   /*background: url('../img/cook.jpeg') #fff no-repeat center / cover,*/
+               /*linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));*/
+   border-left: var(--container-padding) solid transparent;
+}
+
+.features__title {
+   padding-left: 30px;
+
+   font-size: 50px;
+   text-transform: uppercase;
+   color: #fff;
+   border-left: 10px solid #f1cd39;
+}
+
+.features__title_yellow {
+   color: #f1cd39;
 }
 
 .features__content {
@@ -92,12 +123,17 @@ img {
 /* feature */
 
 .feature-wrapper {
-   width: 40%;
+   /*width: 40%;*/
+   display: flex;
+   align-items: flex-start;
+
    background-color: #fff;
+   box-sizing: content-box;
 }
 
 .feature-wrapper:nth-child(2) {
-   width: 60%;
+   /*width: 60%;*/
+   border-right: var(--container-padding) solid transparent;
 }
 
 .feature-wrapper_main {
@@ -121,7 +157,7 @@ img {
 }
 
 .feature {
-   max-width: 445px;
+   /*max-width: 445px;*/
    padding: 30px;
    padding-top: 40px;
 
@@ -129,7 +165,9 @@ img {
 }
 
 .feature_empty {
-   max-width: 100%;
+   /*max-width: 100%;*/
+   align-self: center;
+
    padding: 0 30px;
 }
 
