@@ -4,7 +4,8 @@
  *   add a bottom line to the .feature__link and reaction on hover;
  *   edit the feature__icon;
  *   rename;
- *   rename feature__title;
+ *   rename features__title;
+ *   edit features__img-imitation;
  *   document the code;
  */
 
@@ -89,9 +90,8 @@ img {
    display: flex;
    align-items: center;
    width: 40%;
-   background: url('../img/cook.jpeg') #fff no-repeat center / cover;
-   /*background: url('../img/cook.jpeg') #fff no-repeat center / cover,*/
-               /*linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));*/
+   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+               url('../img/cook.jpeg') #fff no-repeat center / cover;
    border-left: var(--container-padding) solid transparent;
 }
 
