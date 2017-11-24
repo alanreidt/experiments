@@ -23,6 +23,16 @@
    --pseudo-container-gap: calc( (100vw - var(--pseudo-container-width)) / 2 );
 }
 
+/* max-width: calc( var(--pseudo-container-width) + 2 * var(--page-padding) );
+ * (essentially, need to plus a width of the horizontal scroll line)
+ */
+
+@media ( max-width: 1500px ) {
+   :root{
+      --pseudo-container-gap: var(--page-padding);
+   }
+}
+
 html {
    box-sizing: border-box;
 }
@@ -125,6 +135,7 @@ img {
 .feature-wrapper {
    display: flex;
    align-items: flex-start;
+   width: calc( (var(--pseudo-container-width) * 60 / 100) * 50 / 100 );
 
    background-color: #fff;
    box-sizing: content-box;
@@ -132,6 +143,16 @@ img {
 
 .feature-wrapper:nth-child(2) {
    padding-right: var(--pseudo-container-gap);
+}
+
+@media ( max-width: 1500px ) {
+   .feature-wrapper {
+      width: 50%;
+   }
+
+   .feature-wrapper:nth-child(2) {
+      padding-right: 0;
+   }
 }
 
 .feature-wrapper_main {
