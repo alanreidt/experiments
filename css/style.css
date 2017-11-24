@@ -19,8 +19,8 @@
    --main-font-family: "Open Sans", Arial, sans-serif;
    --base-font-size: 16px;
    --page-padding: 30px;
-   --container-width: 1440px;
-   --container-gap: calc( (100vw - var(--container-width)) / 2 );
+   --pseudo-container-width: 1440px;
+   --pseudo-container-gap: calc( (100vw - var(--pseudo-container-width)) / 2 );
 }
 
 html {
@@ -56,9 +56,9 @@ img {
 
 /* CONTAINER */
 
-.container {
-   padding-right: var(--container-gap);
-   padding-left: var(--container-gap);
+.pseudo-container {
+   padding-right: var(--pseudo-container-gap);
+   padding-left: var(--pseudo-container-gap);
 }
 
 /* GRID */
@@ -93,9 +93,9 @@ img {
    display: flex;
    align-items: center;
 
-   width: calc( var(--container-width) * 40 / 100 + var(--container-gap) );
+   width: calc( var(--pseudo-container-width) * 40 / 100 + var(--pseudo-container-gap) );
    /*width: 40%;*/
-   padding-left: var(--container-gap);
+   padding-left: var(--pseudo-container-gap);
 
    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
                url('../img/cook.jpeg') #eee no-repeat center / cover;
@@ -117,7 +117,7 @@ img {
 }
 
 .features__content {
-   width: calc( var(--container-width) * 60 / 100 + var(--container-gap) );
+   width: calc( var(--pseudo-container-width) * 60 / 100 + var(--pseudo-container-gap) );
 }
 
 /* feature */
@@ -131,7 +131,7 @@ img {
 }
 
 .feature-wrapper:nth-child(2) {
-   padding-right: var(--container-gap);
+   padding-right: var(--pseudo-container-gap);
 }
 
 .feature-wrapper_main {
