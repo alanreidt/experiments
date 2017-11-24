@@ -93,11 +93,14 @@ img {
    display: flex;
    align-items: center;
 
-   width: 40%;
+   width: calc( var(--container-width) * 40 / 100 + var(--container-gap) );
+   /*width: 40%;*/
    padding-left: var(--container-gap);
 
    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
                url('../img/cook.jpeg') #eee no-repeat center / cover;
+
+   /*box-sizing: content-box;*/
 }
 
 .features__title {
@@ -114,7 +117,7 @@ img {
 }
 
 .features__content {
-   width: 60%;
+   width: calc( var(--container-width) * 60 / 100 + var(--container-gap) );
 }
 
 /* feature */
