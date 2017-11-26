@@ -1,6 +1,7 @@
 /* TODO
  * + edit the .features__img-imitation;
  * + edit the grid;
+ * ! resolve the widths problem;
  *   add a bottom line to the .feature__link and reaction on hover;
  *   edit the feature__icon;
  *   rename;
@@ -23,12 +24,13 @@
    --pseudo-container-gap: calc( (100vw - var(--pseudo-container-width)) / 2 );
 }
 
+
 /* max-width: calc( var(--pseudo-container-width) + 2 * var(--page-padding) );
- * (essentially, need to plus a width of the horizontal scroll line)
+ * (essentially, need to add a width of the horizontal scroll line, but the @media works without it somehow).
  */
 
 @media ( max-width: 1500px ) {
-   :root{
+   :root {
       --pseudo-container-gap: var(--page-padding);
    }
 }
@@ -66,7 +68,7 @@ img {
 
 /* CONTAINER */
 
-.pseudo-container {
+.container {
    padding-right: var(--pseudo-container-gap);
    padding-left: var(--pseudo-container-gap);
 }
@@ -113,6 +115,10 @@ img {
    /*box-sizing: content-box;*/
 }
 
+.features__content {
+   width: calc( var(--pseudo-container-width) * 60 / 100 + var(--pseudo-container-gap) );
+}
+
 .features__title {
    padding-left: 30px;
 
@@ -124,10 +130,6 @@ img {
 
 .features__title_yellow {
    color: #f1cd39;
-}
-
-.features__content {
-   width: calc( var(--pseudo-container-width) * 60 / 100 + var(--pseudo-container-gap) );
 }
 
 /* feature */
